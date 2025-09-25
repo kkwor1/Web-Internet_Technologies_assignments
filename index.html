@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      /* Set background image */
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    header {
+      background: #44b3bd;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: left;
+      border-radius: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 20px auto 20px auto;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 10px;
+      object-fit: cover;
+    }
+    main {
+      padding: 20px;
+      background: #44b3bd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 auto 20px auto; /* 20px space above main */
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000000;
+    }
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    form input {
+      margin: 8px 0;
+      padding: 10px;
+      font-size: 1em;
+    }
+    form button {
+      background: #000000;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Semantic Header -->
+    <header>
+      <h1>Kubatov Kairat</h1>
+      <p>Computer Science Student passionate about web development and AI.</p>
+      <img src="images/student_image.jpg" alt="Student Photo">
+    </header>
+
+    <!-- Semantic Main Content -->
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>Hello! I am Kubatov Kairat, a second-year student of University of Central Asia with an interest in programming, 
+           problem solving, and creating innovative web projects.</p>
+      </section>
+
+      <!-- Semantic Navigation -->
+      <nav>
+        <h2>Find Me On</h2>
+        <a href="https://chromewebstore.google.com/?hl=en">LinkedIn</a> |
+        <a href="https://chromewebstore.google.com/?hl=en">GitHub</a> |
+        <a href="https://chromewebstore.google.com/?hl=en">Instagram</a>
+      </nav>
+
+      <!-- Contact Form Section -->
+      <section>
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
